@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Contact us from using input tag</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        h1
+        {
+           font-size: 48px;
+           color: blue;
+
+        }
+        hr
+        {
+            width: 15%;
+            border: solid 2px blue;
+        }
+        input
+        {
+            width: 380px;
+            height: 30px;
+        }
+        textarea
+        {
+            width: 380px;
+            height: 70px;
+        }
+        input[type="submit"]
+        {
+            width: 190px;
+            height: 35px;
+            background-color: blueviolet;
+            color: white;
+            border: none;
+        }
+        input[type="Reset"]
+        {
+            width: 190px; ;
+            height:35px ;
+            background-color: red;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body bgcolor="pink">
+    <center>
+        <h1>Contact us</h1>
+        <hr>
+        <p>All field with<span style="color: red;">(*)</span>are required</p>
+
+        <form method="get"  action="welcome.html">
+            <input type="text" name="name" placeholder="Enter your Name *" required>
+            <br><br>
+            <input type="text" name="First name" placeholder="Enter your Firstname *" required>
+            <br><br>
+            <input type="text" name="last name" placeholder="Enter your Lastname  *" required>
+            <br><br>
+            <!-- <input type="text" name="dob" placeholder="dd/mm/yy*" required> -->
+            <input type="date" name="dob" placeholder="dd/mm/yy*" required>
+            <br><br>
+            <input type="text" name="Phone" placeholder="Enetr your Phone*" required>
+            <br><br>
+            <input type="email" name="email" placeholder="Enter your Email *" required>
+            <br><br>
+            <textarea name="message" placeholder="Enter your message *" required></textarea>
+            <br><br>
+            <a href="Welcome.html" target="_blank"><button type="submit" name="Send">Send</button></a>
+            
+            <input type="Reset" name="Reset" value="Reset">
+
+        
+        </form>
+    </center>
+    
+</body>
+</html>
