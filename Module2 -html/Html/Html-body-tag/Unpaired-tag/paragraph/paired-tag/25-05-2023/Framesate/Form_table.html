@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Forms</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body 
+        {
+            background-color: darkcyan;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            
+        }
+
+        div  
+        {
+            
+            width: 39%;
+            height: auto;
+            padding: 7px;
+            background-color: transparent;
+            float: left;
+            margin: 6%;
+            box-shadow: 1px 2px 1px silver;
+            margin-top: 5%;
+
+
+         }
+
+        h1 {
+            font-size: 45px;
+            color: khaki;
+        }
+
+        hr {
+            width: 45%;
+            border: 1px solid gray;
+        }
+
+        input,
+        textarea,
+        td {
+            width: 400px;
+            height: auto;
+            padding: 8px;
+            color: white;
+            margin: auto;
+            
+        }
+
+        input[type=submit] {
+            width: 180px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-left: 20%;
+        }
+
+        input[type=reset] {
+            width: 180px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        iframe {
+            border-radius: 6px;
+
+        }
+        
+        
+        
+        
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <form id="frm" name="form" action="welcome.html">
+
+            <h1>Contact with us</h1>
+            <hr align="left">
+            <table>
+                <tr>
+                    <th align="left">Email*</th>
+
+                    <td><input type="email" name="email" placeholder="Email*" required></td>
+                </tr>
+                <tr>
+                <th align="left">Name*</th>
+                
+                <td><input type="text" name="phone" placeholder="Name*" required></td>
+                </tr>
+                <tr>
+                <th align="left">Phone*</th>
+                
+                <td><input type="text" name="Phone" placeholder="Phone*" required></td>
+                </tr>
+                <tr>
+                <th align="left">Subject*</th>
+                
+                <td><input type="text" name="Subject" placeholder="Subject*" required></td>
+                </tr>
+                <tr>
+                <th align="left">Message*</th>
+                
+                <td><textarea name="textarea" placeholder="Message*" required></textarea></td>
+                </tr>
+                <tr>
+               <td colspan="2"> <input type="submit" name="submit" value="Send">
+                <input type="reset" name="reset" value="reset"></td>
+        </form>
+        </table>
+
+    </div>
+
+
+
+    
+
+</body>
+
+</html>
