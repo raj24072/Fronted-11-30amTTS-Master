@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pseudo-element_selector</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='main.js'></script>
+    <style type="text/css">
+        body {
+            color: white;
+            background-image: url(img/nature.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        fieldset {
+            background-image: url(img/download.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: none;
+            border-radius: 10px;
+            margin-top: 8%;
+        }
+
+        .frm {
+            width: 20%;
+            height: auto;
+            margin: auto;
+        }
+
+        .fb {
+            width: 250px;
+            height: 20px;
+            padding: 10px;
+            margin: auto;
+            color: white;
+            background-color: rgb(49, 49, 196);
+            border-radius: 10px;
+            color: white;
+
+        }
+
+        .hr hr {
+            width: 25%;
+            display: inline-block;
+            margin: auto;
+
+
+        }
+
+        .hr {
+            text-align: center;
+            margin-top: 3%;
+        }
+
+        .frm input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 95%;
+            height: 25px;
+            padding: 2px;
+            margin: 5px;
+        }
+
+        .cen {
+            text-align: center;
+            font-size: 13px;
+
+        }
+
+        .cen a {
+            text-decoration: none;
+
+        }
+
+        .sig input[type="submit"] {
+            width: 250px;
+            height: 40px;
+            background-color: rgb(72, 233, 233);
+            margin-left: 3.5%;
+            border-radius: 10px;
+        }
+
+        .bo {
+            text-align: center;
+            font-size: 13px;
+            margin-top: 5%;
+
+        }
+
+        .bo a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .navbar
+        {
+            background-color: black;
+            width: 98.3%;
+            padding: 19px;
+            margin: 0;
+            margin-left: -0.6%;
+            margin-top: -1%;
+            
+        }
+        .navbar ul li
+        {
+            display: inline-block ;
+            padding:4px 10px ;
+            list-style-type: none;
+            font-size: 18px;
+        }
+        .navbar a
+        {
+            color: white;
+            text-decoration: none;
+        }
+        .navbar a:hover
+        {
+            color: green;
+            text-decoration: underline;
+        }
+        /* .navbar a:visited
+        {
+            color:white;
+            text-decoration: underline;
+
+        } */
+        .navbar a:active
+        {
+            color:brown;
+            text-decoration: underline;
+        }
+        .dropdown
+        {
+         position: relative;
+        }
+        .dropdown1
+        {
+          display: none;
+          width: 130px;
+          height: auto;
+          background-color: black;
+         margin-left: -35%;
+        }
+        .dropdown:hover .dropdown1
+        {
+            display: block;
+            position: absolute;
+            
+          
+        }
+        .navbar a::after
+        {
+            content:"|";
+            padding:2px 30px;
+        }
+        .active::after
+        {
+            content: "|";
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <ul>
+           <li class="dropdown"><a href=""> Features</a>
+        <ul class="dropdown1">
+            <li><a href="" class="active">News Feed</a></li>
+            <li><a href=""class="active"> Friends</a></li><br>
+            <li><a href=""class="active"> Wall</a></li>
+            <li><a href=""class="active">Timeline</a></li>
+        </ul>
+        </li>
+            <li><a href="">Examples</a></li>
+            <li><a href=""> Pricing</a></li>
+            <li><a href=""> Pos</a></li>
+            <li><a href=""> Resource</a></li>
+            
+        </ul>
+    </div>
+    <div class="frm">
+        <form method="post">
+            <fieldset>
+                <legend align="left">Sign in</legend>
+                <div class="fb">&nbsp;&nbsp;
+                    <span class="fa fa-facebook-square">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        Sign up with Facebook</span>
+
+                </div>
+                <div class="hr">
+                    <hr><span>or</span>
+                    <hr>
+                    <p>Sign up with your Email address</p>
+                </div>
+                <label>First name</label><br>
+                <input type="text" name="name" placeholder="" required><br>
+                <label>Last name</label><br>
+                <input type="text" name="Name" placeholder="" required><br>
+                <label>Email address</label><br>
+                <input type="email" name="Email" placeholder="" required><br>
+                <label>Password</label><br>
+                <input type="password" name="password" placeholder="" required><br>
+                <div class="cen">
+                    <p>By clicking sign Up, I agree to the<br><a href="">Tearms of use</a> &nbsp; and<a href=""> &nbsp;
+                            Privacy Policy</a></p>
+                </div>
+                <div class="sig">
+                    <input type="submit" name="sign up" value="Sign up">
+                </div>
+                <div class="bo"><b>Already have an account? <a href="">Log in</a></b>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>
