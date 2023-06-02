@@ -1,0 +1,88 @@
+@import url(font-style.css);
+body
+
+{
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+}
+#header
+{
+   width: 100%;
+   height: auto;
+   box-sizing: border-box;
+   background-color: white;
+   display: flex;
+   flex-direction: row;
+    
+    
+}
+.logo
+{
+ width: 30%;
+ height: auto;
+ padding: 5px;
+
+ font-size: 33px;
+ margin-top: 0.7%;
+ margin-left: 3%;
+ color:gray;
+}
+
+
+    
+
+.navbar
+{
+    width: 70%;
+    
+}
+
+.navbar li
+{
+    list-style-type: none;
+    display: inline-block;
+    padding: 7px 20px;
+    font-size: 22px; 
+   
+}
+.navbar a
+{
+    text-decoration: none;
+    color: rgb(209, 26, 57);
+}
+.list
+{
+    background-color: rgb(209, 26, 57);
+    color: white;
+    padding: 23px;
+    color: white !important;    
+}
+
+
+.box
+{
+    width: 230px;
+    height: 230px;
+    background-color:brown;
+    color:white;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    float: left;
+    margin-left: 4%;
+    margin-top: 13%;
+    overflow: hidden;
+    transition: 6s ease all;
+     text-transform: lowercase;
+    
+    
+}
+.box:hover
+{
+    background: url("img/gif.gif")no-repeat;
+    background-size: cover;
+    transform: rotate(360deg);
+    
+    
+}
