@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>-webkit-rules</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent {
+            width: 100vw;
+            height: 100vh;
+            background-color: #C2DEDC;
+
+
+        }
+
+        .child1 {
+            width: 50vw;
+            height: 20vh;
+            border: 1px solid black;
+            background-color: chocolate;
+            top: 10%;
+            margin: auto;
+            background: -webkit-linear-gradient(46deg, yellow, green, red);
+            background: -moz-linear-gradient(46deg, yellow, green, red);
+            background: linear-gradient(46deg, yellow, green, red);
+
+        }
+
+        .child2 {
+            width: 50vw;
+            height: 20vh;
+            border: 1px solid black;
+            background-color: chocolate;
+            margin: auto;
+            margin-top: 2%;
+            background: linear-gradient(111deg, rgba(120, 133, 80, .3), rgba(255, 0, 0, .5)71.71%),
+                        linear-gradient(122deg, rgba(10, 0, 0, .7), rgba(255, 256, 0, .9)60.71%),
+                        linear-gradient(46deg, rgba(0, 156, 0, .1), rgba(255, 0, 256, .52)71.71%);
+
+        }
+
+        .child3 {
+            width: 50vw;
+            height: 20vh;
+            border: 1px solid black;
+            background-color: chocolate;
+            margin: auto;
+            margin-top: 2%;
+            background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <div class="child3"></div>
+    </div>
+</body>
+
+</html>
