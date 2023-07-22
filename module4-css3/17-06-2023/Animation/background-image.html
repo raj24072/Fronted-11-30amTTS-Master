@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Background-image</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        body
+        {
+            
+            box-sizing: border-box;
+        }
+        #main{
+            width: 100vw;
+            height: 100vh;
+            animation-name: img;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes img {
+            0%   {background:url("image/fern-m-lomibao-rAPI9764v7U-unsplash.jpg"); background-size: cover; height: 100vh; }
+            30% {background: url("image/pexels-pixabay-33109.jpg") no-repeat; background-size: cover; height: 100vh;}
+             60% {background: url("image/gabrielle-claro-PPGttzveWUE-unsplash.jpg")no-repeat; background-size: cover;  height: 100vh }
+            90% {background: url("image/jonatan-pie-h8nxGssjQXs-unsplash.jpg")no-repeat; background-size:cover; height: 100vh }
+        
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <section id="main"></section>
+    
+</body>
+</html>

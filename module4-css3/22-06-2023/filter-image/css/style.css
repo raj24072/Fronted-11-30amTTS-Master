@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    background-size: cover;
+    position: relative;
+    
+}
+.main1
+{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top:5%;
+}
+.main2
+{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: 25%;
+}
+/* blur defined value px */
+.filter
+{
+    width: 20%;
+    height: 30vh;
+    /* border: 1px solid black; */
+    background-image: url("../image/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+}
+/* brightness defined value 0.1 to 1 and % */
+.filter1
+{
+    width: 20%;
+    height: 30vh;
+    /* border: 1px solid black; */
+    background: url("../image/2.jpg")no-repeat;
+    background-size: cover;
+    filter: brightness(25%);
+}
+/* The contrast of the result, specified as a <number> or a <percentage>. */
+.filter2
+{
+    width: 20%;
+    height: 30vh;
+    /* border: 1px solid black; */
+    background-image: url("../image/3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: contrast(0.9);
+}
+/* The drop-shadow of the result, specified as a mm, px, rem. */
+
+.filter3
+{
+    width: 20%;
+    height: 30vh;
+    /* border: 1px solid black; */
+    background-image: url("../image/4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: drop-shadow(5mm 6mm 4mm  rgba(100, 20,45,.9)); */
+    filter: drop-shadow(.9rem .9rem 2rem #e23);
+}
+/* The grayscale of the result, specified as a <number> or a <percentage>. */
+
+.filter4
+{
+    width: 20%;
+    height: 30vh;
+    /* border: 1px solid black; */
+    background-image: url("../image/5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(0.9);
+    
+}
+/* The opacity of the result, specified as a <number> or a <percentage>. */
+
+.filter5
+{
+    width: 20%;
+    height: 30vh;
+    /* border: 1px solid black; */
+    background-image: url("../image/6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: opacity(0.7); */
+    filter: opacity(40%);
+}

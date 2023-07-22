@@ -1,0 +1,84 @@
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0.36;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    from{background-color: pink;}
+    to{background-color: brown;}
+}
+body
+{
+    background-color: dimgrey;
+    margin: 0;
+    padding: 0;
+    animation-name: animate;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+.first
+{
+    width: 100%;
+    background-color:aqua;
+    animation: animate 4s infinite 2s;
+}
+p
+{
+color:black;
+text-align: justify;
+text-transform: capitalize;
+}
+.slider
+{
+    animation-name: slide;
+    animation-duration: 3s;
+    color: black;
+    margin-top: 2%;
+}
+@keyframes slide {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+    
+}
+.slider2
+{
+    animation-name: slide2;
+    animation-duration: 4s;
+    color: silver;
+    margin-top: 2%;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+@keyframes slide2 {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    75%
+    {
+        font-size: 300%;
+        margin-left: 25%;
+        width: 150%;
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+    }
+    
+}

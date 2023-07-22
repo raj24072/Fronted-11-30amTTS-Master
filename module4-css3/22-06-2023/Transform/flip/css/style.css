@@ -1,0 +1,89 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/* overflow: hidden    ; */
+}
+.main-box
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    /* position: fixed; */
+}
+.main-box img
+{
+    width: 100%;
+    height: 100%;
+}
+.main-box h3
+{
+    text-align: center  ;
+    font-size: 70px;
+    background: url("../image/jungle.jpg");
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0;
+    padding: 0;
+}
+.internal-box
+{
+    width: 100%;
+    height: 510px;
+    /* border: 1px solid black; */
+    position: absolute;
+    top: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box1
+{
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid black; */
+}
+.box1:hover .flip-cont
+{
+    transform: rotateY(180deg);
+}
+.flip-cont
+{
+    width: 300px;
+    height: 300px;
+    background-color: transparent;
+    position: relative;
+    border-radius: 20px;
+    transition: 1s ease all;
+    transform-style: preserve-3d;
+
+}
+.front
+{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color:black;
+    border-radius: 20px;
+
+}
+.back
+{
+    width: 300px;
+    height: 300px;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    
+}
+.back
+{
+    transform: rotateY(180deg);
+
+}
+.back img
+{
+    border-radius: 20px;
+}

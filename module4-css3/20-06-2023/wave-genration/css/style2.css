@@ -1,0 +1,85 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+:root
+{
+    --digit-up:-40px;
+}
+.container
+{
+    background-color: black;
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+.container span
+{
+    font-size: 40px;
+    letter-spacing: 10px;
+    animation: wave 2s infinite;
+}
+.container span:nth-child(1)
+{
+    animation-delay: .1s;
+}
+.container span:nth-child(2)
+{
+    animation-delay:.2s;
+}
+.container span:nth-child(3)
+{
+    animation-delay: .3s;
+
+}
+.container span:nth-child(4)
+{
+    animation-delay: .4s;
+}
+.container span:nth-child(5)
+{
+    animation-delay: .5s;
+}
+.container span:nth-child(6)
+{
+    animation-delay: .6s;
+}
+.container span:nth-child(7)
+{
+    animation-delay: .7s;
+}
+.container span:nth-child(8)
+{
+    animation-delay: .8s;
+}
+.container span:nth-child(9)
+{
+    animation-delay: .9s;
+}
+.container span:nth-child(10)
+{
+    animation-delay: .9s;
+}
+.container span:nth-child(11)
+{
+    animation-delay: 1s ;
+}
+@keyframes wave {
+    0%{
+        transform:translateY(var(--digit-up)) ;
+        color: orange;
+    }
+    50%{
+        transform: translateY(0px);
+        color: red;
+    }
+    100%{
+        transform: translateY(var(--digit-up));
+        color: orange;
+    }
+}
