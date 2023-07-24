@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" type="text/css" media="screen" href="">
+    <script src='JS/address.js'></script>
+    <style>
+        body {
+            /* margin: 0; */
+            padding: 0;
+            background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+            background-size: 100%;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            text-shadow: 5px 2px darkcyan;
+        }
+
+        hr {
+            width: 25%;
+            margin: auto;
+            border: 1px solid #4b6cb7;
+            box-shadow: 2px 3px 6px darkcyan;
+
+        }
+          .main{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 5%;
+
+
+        
+          }
+        .Locations {
+            width:40%;
+            background-color: white;
+            background-color: white;
+            padding: 10px;
+            margin:3%;
+            margin-left: 5%;
+            border-radius: 20px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <h1>Our Locations</h1>
+    <hr align="left">
+      <div class="main">
+        <div class="Locations" id="addr">
+            <script>address1()</script>
+        </div>
+        <div class="Locations" id="addr2">
+            <script>address2()</script>
+        </div>
+        <div class="Locations" id="addr3">
+            <script>address3()</script>
+        </div>
+        <div class="Locations" id="addr4">
+            <script>address4()</script>
+        </div>
+    </div>
+</body>
+
+</html>
