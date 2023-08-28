@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>alert</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.0.js'></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                alert("Yes i am eligible for voting");
+                window.location="https://eci.gov.in/"
+            });
+            $("html,body").css({"background-color":"black"})
+            $("#btn").css({"width":"150px","padding":"10px","margin":"auto","display":"block","background-color":"darkcyan","border":"none","border-radius":"10px","cursor":"pointer"})
+        })
+    </script>
+</head>
+<body>
+    <button type="button" id="btn">Check age>></button>
+</body>
+</html>

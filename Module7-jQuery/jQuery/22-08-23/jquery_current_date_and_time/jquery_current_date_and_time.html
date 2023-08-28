@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jquery current date and time</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+    <script>
+         $(document).ready(function(){
+            $("#btn").css({"margin":"auto","display":"block","padding":"10px","border":"none","border-radius":"10px","background-color":"darkcyan","margin-top":"4%"})
+            $("#btn").click(function(){
+                let da=new Date();//new is creating an object to Date function
+                document.getElementById("demo").innerHTML="The Current date & time of system is : " +da;
+            })
+         })
+    </script>
+</head>
+<body>
+    <p id="demo" align="center"></p>
+    <button type="button" id="btn">Click to current date and time</button>
+</body>
+</html>

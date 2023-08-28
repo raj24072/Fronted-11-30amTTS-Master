@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Confirm</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Online jquery CDN -->
+    <script src='https://code.jquery.com/jquery-3.7.0.js'></script>
+    <script>
+          $(document).ready(function(){
+            $("#btn").click(function(){ 
+
+            confirm("Are you sure logout?"); //confirm box
+
+            alert("you are succesfully logout"); //alert box
+
+            window.location="https://google.com" //link location
+            });
+            //  css add
+            $("#btn").css({"width":"150px","padding":"10px","margin":"auto","display":"block","background-color":"darkcyan","border":"none","border-radius":"10px","cursor":"pointer"})
+            
+          })
+    </script>
+</head>
+<body>
+    <button type="button" id="btn">Logout</button>
+</body>
+</html>

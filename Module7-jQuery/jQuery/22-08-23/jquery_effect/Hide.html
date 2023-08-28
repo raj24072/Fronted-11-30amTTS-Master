@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jquery hide method</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- jquery online CDN -->
+    <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+    <!-- jquery start here -->
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                $("#im").hide(2000);
+            })
+        })
+    </script>
+    <!-- style here -->
+    <style>
+        body{margin: 0;padding: 0; background-color: black;}
+        .main{
+            width: 60%;
+            height: auto;
+            margin: auto;
+        }
+        #btn{
+            background-color: darkcyan;
+            border: none;
+            border-radius: 8px;
+            width: 100px;
+            margin: auto;
+            display: block;
+            padding: 10px;
+        }
+        img
+        {
+            margin-top: 3%;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <button type="button" id="btn">Click to hide</button>
+    <img src="https://images.unsplash.com/photo-1614160859544-177611d11f6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aGQlMjBwaG90b3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" alt="a car" id="im">
+</div>
+</body>
+</html>

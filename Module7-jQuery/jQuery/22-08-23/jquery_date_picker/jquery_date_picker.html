@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>jquery date picker</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- CSS file -->
+    <link rel='stylesheet' type='text/css' media='screen' href='css/jquery-ui.css'>
+    <!-- Online jquery CDN -->
+    <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+    <!-- js file -->
+    <script src="js/jquery-ui.js"></script>
+    <!-- jquery start here -->
+    <script>
+        $(document).ready(function(){
+             $("#dob").datepicker();
+        $("#book").datepicker();
+        })
+    </script>
+</head>
+<body>
+     <label for="dob">Select DOB</label>
+     <input type="text" name="dob" id="dob" placeholder="dd/mm/yy"><br><br>
+     <label for="book">Book Appointment</label>
+     <input type="text" name="book" id="book" placeholder="dd/mm/yy">
+</body>
+</html>

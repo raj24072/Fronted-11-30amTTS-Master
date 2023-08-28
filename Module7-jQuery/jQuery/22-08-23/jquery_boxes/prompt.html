@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>prompt box</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Online jquery CDN -->
+    <script src='https://code.jquery.com/jquery-3.7.0.js'></script>
+    <!-- jquery start here -->
+  <script>
+    $(document).ready(function(){
+        $("#btn").css({"width":"150px","padding":"10px","margin":"auto","display":"block","background-color":"darkcyan","border":"none","border-radius":"10px","cursor":"pointer"})
+        $("#btn").click(function(){
+            let ag = prompt("Enter youer age :");
+            if(ag >=18)
+            {
+                alert("You are eligible for voting");
+                window.location = "https://eci.gov.in/";
+            }
+            else
+            {
+                alert("You are not eligible for voting");
+                window.location="";
+            }
+        })
+    })
+  </script>
+</head>
+<body>
+    <button type="button" id="btn">Check age>></button>
+</body>
+</html>

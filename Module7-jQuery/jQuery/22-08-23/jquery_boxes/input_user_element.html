@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>input user element</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Online jquery CDN -->
+    <script src='https://code.jquery.com/jquery-3.7.0.js'></script>
+    <!-- jquery start here -->
+    <script>
+       $(document).ready(function(){
+        // style 
+        $("html,body").css({"background-color":"black"})
+        $("p").css({"color":"white"});
+        $(".page").css({"width":"30%","margin":"auto","margin-top":"10%"});
+        $("form > input").css({"width":"100%","padding":"10px"})
+        $("#btn").css({"width":"106%","padding":"10px","background-color":"darkcyan","border":"none","border-radius":"10px"})
+        $("#btn").click(function(){
+           let a=parseInt ( document.getElementById("a-value").value);
+           let b=parseInt ( document.getElementById("b-value").value);
+           let c = a+b;
+           document.getElementById("demo").innerHTML="Additions of number is :"+c;
+        })
+       })
+    </script>
+</head>
+<body>
+    <section>
+    <div class="page">
+    <p id="demo"></p>
+    <form action="action_page.php" target="_blank" method="post">
+        <input type="text" name="a-value" id="a-value" placeholder="Enter a values" ><br><br>
+        <input type="text" name="b-value" id="b-value" placeholder="Enter b values"><br><br>
+        <button type="button" id="btn">Check</button>
+    </form>
+</div>
+</section>
+</body>
+</html>
