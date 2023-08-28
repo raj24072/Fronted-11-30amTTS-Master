@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>btn click to text hide</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                // $('#demo').hide();
+                // $('#demo').hide(5000);
+                // $('#demo').hide("fast");
+                $('#demo').hide('slow');
+            })
+        })
+    </script>
+</head>
+<body>
+    <p id="demo">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus asperiores nemo eveniet quasi, quidem, enim consectetur incidunt culpa doloremque eligendi fugiat voluptatem! Sunt perferendis dolorem praesentium optio maiores quis facilis?
+    </p>
+    <button type="button" id="btn">Click to hide content</button>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Click Button</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+    <!-- jquery call here -->
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                window.alert('Click to redirect page')
+                window.location='https://jquery.com';
+            })
+        })
+    </script>
+</head>
+<body>
+    <button type="button" id="btn">Click It!</button>
+</body>
+</html>

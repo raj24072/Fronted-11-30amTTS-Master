@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Toggle</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+    <script>
+        $(document).ready(function(){
+            $('.fa').click(function(){
+                $('#list').toggle();
+            });
+
+
+        })
+    </script>
+    <style>
+        body
+        {
+            background-color: teal;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .btn-toggler .fa-bars
+        {
+            font-size: 30px;
+            color: white;
+            margin-top: 2%;
+            /* margin-left: 2%; */
+            position: absolute;
+            z-index: 3;
+        }
+        #list
+        {
+            width: 20%;
+            height: 500px;
+            /* background-color:slategray; */
+            position: relative;
+            /* display: none; */
+        }
+        .u-list
+        {
+            list-style-type: none;
+        }
+        ul li a
+        {
+            text-decoration: none;
+            color: black;
+            
+        }
+        ul li:hover
+        {
+            background-color: steelblue;
+        }
+        ul li
+        {
+            padding: 10px 0px;
+            font-size: 20px;
+            margin-top: 10%;
+        }
+        .u-list
+        {
+            margin: 0;
+            padding: 0;
+            margin-top: 4%;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn-toggler" id="btn">
+        <span class="fa fa-bars"></span>
+    </div>
+    <div id="list">
+        <ul class="u-list">
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Social</a></li>
+        </ul>
+
+    </div>
+</body>
+</html>
