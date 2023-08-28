@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>onclick event</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        function myfunction()
+        {
+            let a=44;
+            let b=55;
+            let c=a+b;
+            document.getElementById("demo").innerHTML=c;
+        }
+    </script>
+</head>
+<body>
+    <button type="button" id="btn" onclick="myfunction()">Click it!</button>
+    <p id="demo"></p>
+</body>
+</html>

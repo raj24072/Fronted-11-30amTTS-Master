@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Confirm()</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <a href="#" onclick="test()" id="link">Click it!</a>
+    <p id="demo"></p>
+
+    <script>
+        function test()
+        {
+            if(window.confirm('are you sure to delete data ?'))
+            {
+                
+                document.getElementById('demo').innerHTML = "You have successfully deleted the file"
+                document.getElementById('link').style="display:none";
+            }
+            else
+            {
+                window.location = 'Confirm1.html';
+            }
+        } 
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>mouseleave</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script >
+        function test1()
+        {
+            document.getElementById("imgg").src="Image/right.gif";
+        }
+        function test2()
+        {
+            document.getElementById("imgg").src="Image/dire.gif";
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <img src="Image/right.gif" id="imgg" width="400px" height="400px" onmouseover="test2()" onmouseleave="test1()">
+</center>
+</body>
+</html>

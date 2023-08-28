@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+      function test()
+      {
+        var cont1=document.getElementById("mysection1");
+        var cont2=document.getElementById("mysection2");
+        var cont3=document.getElementById("mysection3");
+
+            cont1.classList.add("content1");
+            cont2.classList.add("content2");
+            cont3.classList.add("content3");
+      }
+    </script>
+    <style>
+        .content1
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            background-color: darkcyan;
+            padding: 20px;
+            margin-top: 5%;
+        }
+        .content2
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            background-color:tomato;
+            padding: 20px;
+            margin-top: 5%;
+        }
+        .content3
+        {
+            width: 50%;
+            height: auto;
+            margin: auto;
+            background-color:wheat;
+            padding: 20px;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body onload="test()">
+    <div id="mysection1"></div>
+    <div id="mysection2"></div>
+    <div id="mysection3"></div>
+</body>
+</html>

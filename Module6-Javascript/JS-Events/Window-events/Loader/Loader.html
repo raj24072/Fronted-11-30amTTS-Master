@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Amazon</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src="JS/loader.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src='https://code.jquery.com/jquery-3.7.0.min.js'></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+       <script type='text/javascript'>
+        $(document).ready(function(){
+            $(".page-product-slider").cycle("fade");
+        })
+       </script>
+</head>
+
+<body onload="mainfunction()">
+    <!-- Loader applied here -->
+    <div id="loader"></div>
+    <div id="mainfunction">
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo border"></div>
+            <div class="nav-address border">
+                <p class="nav-add-p1">Delivery to</p>
+                <div class="add">
+                    <i class="fa-solid fa-location-dot" id="location"></i>
+                    <p class="nav-add-p2">India</p>
+                </div>
+            </div>
+            <div class="search">
+                <select class="option">
+                    <option>All</option>
+                </select>
+                <input type="text" name="Search" placeholder="Search Amazon" class="search-box">
+                <span class="fa fa-search" id="search"></span>
+            </div>
+            <div class="flag-lang">
+                <div class="flag">
+                    <img src="image/flag.png">
+                </div>
+                <span>EN</span>
+                <a href="#"><span class="fa fa-angle-down"></span></a>
+            </div>
+            <div class="account-list">
+                <span id="sign-in">Hello,sign in</span>
+                <span id="account">Account & List <span class="fa fa-angle-down" style="color: white;"></span>
+                </span>
+            </div>
+            <div class="returns">
+                <span class="return">Returns</span>
+                <span class="order">& Orders</span>
+            </div>
+            <div class="cart">
+                <span class="fa fa-cart-shopping" id="cart"></span>
+                <span style="color: white; font-size: 14px; font-weight: 700;">Cart</span>
+            </div>
+        </div>
+        <!-- second nav -->
+        <div class="sec-nav">
+            <div class="bars">
+                <a href="#"> <span class="fa fa-bars"></span></a>
+                <span class="all">All</span>
+            </div>
+            <div class="sec-nav-list">
+
+                <li><a href="#">Today's Deals </a> </li>
+                <li> <a href="#"> Customers Service </a></li>
+                <li> <a href="#"> Registry </a></li>
+                <li> <a href="#"> Gift Cards </a></li>
+                <li> <a href="#"> Sell </a></li>
+
+            </div>
+            <div class="sec-nav-right-list"> <a href="#">Shop great deals now</a> </div>
+        </div>
+    </header>
+    <!-- hero section -->
+    <div class="hero">
+        <div class="hero-link">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local
+                delivery. <a href="#">Click here to go to amazon.in</a></p>
+        </div>
+    </div>
+    <!-- page section -->
+    <div class="page-product">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Health & Persnol Care</h2>
+                <div class="img2" style="background-image: url('image/box2.jpg');"></div>
+                <p><a href=""> Shop now </a></p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Electronics</h2>
+                <div class="img2" style="background-image: url('image/box3.jpg');"></div>
+                <p><a href=""> Shop now </a></p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>New arrivals in Toys</h2>
+                <div class="img2" style="background-image: url('image/box5.jpg');"></div>
+                <p><a href=""> Shop now </a></p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2>Discover fashion trends</h2>
+                <div class="img2" style="background-image: url('image/box6.jpg');"></div>
+                <p><a href=""> Shop now </a></p>
+            </div>
+        </div>
+
+        <!-- page-section 2 -->
+        <div class="page-product">
+            <div class="box1 box">
+                <div class="box-content">
+                    <h2>For your Fitness Needs</h2>
+                    <div class="img2" style="background-image: url('image/box-5.jpg');"></div>
+                    <p><a href=""> Shop now </a></p>
+                </div>
+            </div>
+            <div class="box2 box">
+                <div class="box-content">
+                    <h2>Home refresh ideas</h2>
+                    <div class="img2" style="background-image: url('image/box-6.jpg');"></div>
+                    <p><a href=""> Shop now </a></p>
+                </div>
+            </div>
+            <div class="box3 box">
+                <div class="box-content">
+                    <h2>Shop Laptops & Tablets</h2>
+                    <div class="img2" style="background-image: url('image/box-7.jpg');"></div>
+                    <p><a href=""> Shop now </a></p>
+                </div>
+            </div>
+            <div class="box4 box">
+                <div class="box-content">
+                    <h2>Create with strip lights</h2>
+                    <div class="img2" style="background-image: url('image/box-8.jpg');"></div>
+                    <p><a href=""> Shop now </a></p>
+                </div>
+            </div>
+        </div>
+        <div class="main-page-product-slider">
+        <div class="page-product-slider-span"><span class="">International top sellers</span></div>
+        <div class="page-product-slider">
+            <img src="slider img/slider1.jpg">
+            <img src="slider img/slider2.jpg">
+            <img src="slider img/slider3.jpg">
+        </div>
+    </div>
+      <!-- page section-3 -->
+    <div class="page-product">
+        <div class="box1 box">
+            <div class="box-content">
+                <h2>Deals in Tools and Home Improvement</h2>
+                <div class="img2" style="background-image: url('image/box-9.jpg');"></div>
+                <p><a href=""> Shop now </a></p>
+            </div>
+        </div>
+        <div class="box2 box">
+            <div class="box-content">
+                <h2>Shop Pet supplies</h2>
+                <div class="img2" style="background-image: url('image/box-10.jpg');"></div>
+                <p><a href=""> Shop now </a></p>
+            </div>
+        </div>
+        <div class="box3 box">
+            <div class="box-content">
+                <h2>Spring new arrivals</h2>
+                <div class="img2" style="background-image: url('image/box-11.jpg');"></div>
+                <p><a href=""> Shop now </a></p>
+            </div>
+        </div>
+        <div class="box4 box">
+            <div class="box-content">
+                <h2>Kindle E readers</h2>
+                <div class="img2" style="background-image: url('image/box12.jpg');"></div>
+                <p><a href=""> Shop now </a></p>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- footer section -->
+   <footer>
+    <div class="footer1"></div>
+    <div class="footer2"><hr></div>
+   </footer>
+</div>
+</body>
+
+</html>
