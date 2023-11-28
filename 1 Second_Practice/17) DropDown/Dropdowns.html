@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dropdown</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- External CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Font Awesome Online Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Online Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap Online Stylesheet CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Jquery Online Script CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap Online Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- External Script -->
+    <script src='main.js'></script>
+</head>
+
+<body style="background-color: dimgray;">
+    <!-- Main Container Start Here -->
+    <div class="container mt-3">
+        <!-- Card Section Start Here -->
+        <div class="card">
+            <!-- First Section Start Here -->
+            <div class="m-3 p-3 mb-3 mx-auto">
+                <h2 class="text-center font-monospace">Basic Dropdown</h2>
+                <hr>
+                <div class="btn-group bg-primary pe-0">
+                    <div class="dropdown">
+                        <button type="button" class="btn dropdown-toggle btn-primary"
+                            data-bs-toggle="dropdown">Apple</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Apple Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Apple ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Apple imac</a></li>
+                        </ul>
+                        <button type="button" class="btn dropdown-toggle btn-primary"
+                            data-bs-toggle="dropdown">Samsung</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Samsung Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Samsung ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Samsung imac</a></li>
+                        </ul>
+                        <button type="button" class="btn border-0 btn-primary dropdown-toggle"
+                            data-bs-toggle="dropdown">Sony</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Sony Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Sony ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Sony imac</a></li>
+                        </ul>
+                        <button type="button" class="btn border-0 btn-primary dropdown-toggle"
+                            data-bs-toggle="dropdown">Micromax</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Micromax Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Micromax ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Micromax imac</a></li>
+                        </ul>
+                        <button type="button" class="btn border-0 btn-primary dropdown-toggle"
+                            data-bs-toggle="dropdown">Lava</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Lava Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Lava ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Lava imac</a></li>
+                        </ul>
+                        <button type="button" class="btn border-0 btn-primary dropdown-toggle"
+                            data-bs-toggle="dropdown">Realme</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Realme Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Realme ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Realme imac</a></li>
+                        </ul>
+                        <button type="button" class="btn border-0 btn-primary dropdown-toggle"
+                            data-bs-toggle="dropdown">One+</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">One+ Watch</a></li>
+                            <li><a href="#" class="dropdown-item">One+ ipad</a></li>
+                            <li><a href="#" class="dropdown-item">One+ imac</a></li>
+                        </ul>
+                        <button type="button" class="btn border-0 btn-primary dropdown-toggle"
+                            data-bs-toggle="dropdown">Poco</button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Poco Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Poco ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Poco imac</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- First Section End Here -->
+            <!-- Second Section Start Here -->
+            <div class="m-3 p-3 mb-3 mx-auto">
+                <h2 class="text-center font-monospace">Dropdown Divider</h2>
+                <hr>
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle btn-primary"
+                        data-bs-toggle="dropdown">Apple</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Apple Watch</a></li>
+                        <li><a href="#" class="dropdown-item">Apple ipad</a></li>
+                        <li><a href="#" class="dropdown-item">Apple imac</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#" class="dropdown-item">Smart Tv</a></li>
+                    </ul>
+                    <button type="button" class="btn dropdown-toggle btn-primary"
+                        data-bs-toggle="dropdown">Samsung</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Samsung Watch</a></li>
+                        <li><a href="#" class="dropdown-item">Samsung ipad</a></li>
+                        <li><a href="#" class="dropdown-item">Samsung imac</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#" class="dropdown-item">Smart Tv</a></li>
+                    </ul>
+                    <button type="button" class="btn border-0 btn-primary dropdown-toggle"
+                        data-bs-toggle="dropdown">Poco</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Poco Watch</a></li>
+                        <li><a href="#" class="dropdown-item">Poco ipad</a></li>
+                        <li><a href="#" class="dropdown-item">Poco imac</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a href="#" class="dropdown-item">Smart Tv</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Second Section End Here -->
+
+            <!-- Third Section Start Here -->
+            <div class="m-3 p-3 mb-3 mx-auto">
+                <h2 class="text-center font-monospace">Dropdown Header</h2>
+                <hr>
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle btn-primary"
+                        data-bs-toggle="dropdown">Apple</button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <h5 class="dropdown-header">Smart items</h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Apple Watch</a></li>
+                        <li><a href="#" class="dropdown-item">Apple ipad</a></li>
+                        <li><a href="#" class="dropdown-item">Apple imac</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h5 class="dropdown-header">Hd items </h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Smart Tv</a></li>
+                    </ul>
+                    <button type="button" class="btn dropdown-toggle btn-primary"
+                        data-bs-toggle="dropdown">Samsung</button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <h5 class="dropdown-header">Smart items</h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Samsung Watch</a></li>
+                        <li><a href="#" class="dropdown-item">Samsung ipad</a></li>
+                        <li><a href="#" class="dropdown-item">Samsung imac</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h5 class="dropdown-header">Hd items </h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Smart Tv</a></li>
+                    </ul>
+                    <button type="button" class="btn border-0 btn-primary dropdown-toggle"
+                        data-bs-toggle="dropdown">Poco</button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <h5 class="dropdown-header">Smart items</h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Poco Watch</a></li>
+                        <li><a href="#" class="dropdown-item">Poco ipad</a></li>
+                        <li><a href="#" class="dropdown-item">Poco imac</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h5 class="dropdown-header">Hd items </h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Smart Tv</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Third Section End Here -->
+
+            <!-- Fourth Section Start Here -->
+            <div class="m-3 p-3 mb-3 mx-auto">
+                <h2 class="text-center font-monospace">Dropdown Active & Disabled Items</h2>
+                <hr>
+                <div class="dropdown">
+                    <button type="button" class="btn dropdown-toggle btn-primary"
+                        data-bs-toggle="dropdown">Apple</button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <h5 class="dropdown-header">Smart items</h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Apple Watch</a></li>
+                        <li><a href="#" class="dropdown-item active">Apple ipad Active</a></li>
+                        <li><a href="#" class="dropdown-item disabled">Apple imac Disabled</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h5 class="dropdown-header">Hd items </h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Smart Tv</a></li>
+                    </ul>
+                    <button type="button" class="btn dropdown-toggle btn-primary"
+                        data-bs-toggle="dropdown">Samsung</button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <h5 class="dropdown-header">Smart items</h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item disabled">Samsung Watch Disabled</a></li>
+                        <li><a href="#" class="dropdown-item">Samsung ipad</a></li>
+                        <li><a href="#" class="dropdown-item active">Samsung imac Active</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h5 class="dropdown-header">Hd items </h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Smart Tv</a></li>
+                    </ul>
+                    <button type="button" class="btn border-0 btn-primary dropdown-toggle"
+                        data-bs-toggle="dropdown">Poco</button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <h5 class="dropdown-header">Smart items</h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item disabled">Poco Watch Disabled</a></li>
+                        <li><a href="#" class="dropdown-item">Poco ipad</a></li>
+                        <li><a href="#" class="dropdown-item">Poco imac</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <h5 class="dropdown-header">Hd items </h5>
+                        </li>
+                        <li><a href="#" class="dropdown-item active">Smart Tv Active</a></li>
+                    </ul>
+                    <button type="button" class="btn border-0 btn-primary dropdown-toggle"
+                        data-bs-toggle="dropdown">Micromax</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item active">Micromax Watch Active</a></li>
+                        <li><a href="#" class="dropdown-item">Micromax ipad</a></li>
+                        <li><a href="#" class="dropdown-item disabled">Micromax imac disabled</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Fourth Section End Here -->
+            <!-- Fifth Section Start Here -->
+            <div class="m-3 p-3 mb-3">
+                <h2 class="">Dropdown Position</h2>
+                <hr>
+                <div class="d-flex justify-content-between">
+                <div class="dropdown dropend">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Men Cloth's</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Clothing</a></li>
+                        <li><a href="#" class="dropdown-item">Shoes</a></li>
+                        <li><a href="#" class="dropdown-item">Special Offers</a></li>
+                        <li><a href="#" class="dropdown-item">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown dropstart">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Men Cloth's</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Clothing</a></li>
+                        <li><a href="#" class="dropdown-item">Shoes</a></li>
+                        <li><a href="#" class="dropdown-item">Special Offers</a></li>
+                        <li><a href="#" class="dropdown-item">Sale</a></li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+            <!-- Fifth Section End Here -->
+
+             <!-- Sixth Section Start Here -->
+             <div class="m-3 p-3 mb-3">
+                <h2 class="">Dropdown Menu Right</h2>
+                <hr>
+                <div class="dropdown dropdown-menu-end">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Wide dropdown button to demonstrate this example</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Clothing</a></li>
+                        <li><a href="#" class="dropdown-item">Shoes</a></li>
+                        <li><a href="#" class="dropdown-item">Special Offers</a></li>
+                        <li><a href="#" class="dropdown-item">Sale</a></li>
+                    </ul>
+                </div>
+                <br><br>
+                <h2 class="">Dropdown Menu Left</h2>
+                <hr>
+                <div class="dropdown dropdown-menu-start">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Wide dropdown button to demonstrate this example</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Clothing</a></li>
+                        <li><a href="#" class="dropdown-item">Shoes</a></li>
+                        <li><a href="#" class="dropdown-item">Special Offers</a></li>
+                        <li><a href="#" class="dropdown-item">Sale</a></li>
+                    </ul>
+                </div>
+            
+            </div>
+            <!-- Sixth Section End Here -->
+
+             <!-- Seventh Section Start Here -->
+             <div class="m-3 p-3 mb-3">
+                <h2 class="">Dropdown Menu Right</h2>
+                <hr>
+                <div class="d-flex justify-content-between">
+                <div class="dropup">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropup example</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Clothing</a></li>
+                        <li><a href="#" class="dropdown-item">Shoes</a></li>
+                        <li><a href="#" class="dropdown-item">Special Offers</a></li>
+                        <li><a href="#" class="dropdown-item">Sale</a></li>
+                    </ul>
+                </div>
+                
+                <div class="dropup">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropup example</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Clothing</a></li>
+                        <li><a href="#" class="dropdown-item">Shoes</a></li>
+                        <li><a href="#" class="dropdown-item">Special Offers</a></li>
+                        <li><a href="#" class="dropdown-item">Sale</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            </div>
+            <!-- Seventh Section End Here -->
+
+             <!-- Eighth Section Start Here -->
+             <div class="m-3 p-3 mb-3">
+                <h2 class="">Dropdown Menu With Text</h2>
+                <hr>
+                <div class="d-flex justify-content-between">
+                <div class="">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropup example</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Clothing</a></li>
+                        <li><a href="#" class="dropdown-item">Shoes</a></li>
+                        <li><a href="#" class="dropdown-item-text">Text Link</a></li>
+                        <hr class="dropdown-divider">
+                        <li><h5 class="dropdown-header">Text</h5></li>
+                        <li><span class="dropdown-item-text">1st text</span></li>
+                        <li><span class="dropdown-item-text">2nd text</span></li>
+                    </ul>
+                </div>
+                
+                <div class="">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Dropup example</button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">Clothing</a></li>
+                        <li><a href="#" class="dropdown-item">Shoes</a></li>
+                        <li><a href="#" class="dropdown-item">Special Offers</a></li>
+                        <li><a href="#" class="dropdown-item-text">Sale Only Text</a></li>
+                        <li><h5 class="dropdown-header">Text Items</h5></li>
+                        <hr class="dropdown-divider">
+                        <li><span class="dropdown-item-text">1st Text</span></li>
+                        <li><span class="dropdown-item-text">2nd Text</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            </div>
+            <!-- Eighth Section End Here -->
+            <!-- nineth Section Start Here -->
+            <div class="m-3 p-3 mb-3">
+                <div class="row">
+                    <!-- Left Start -->
+                    <div class="col-md-12 p-3">
+                       <h2>Grouped Button With Dropdown</h2>
+                       <hr>
+                       <div class="btn-group bg-primary">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Apple</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#" class="dropdown-item">Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Ios</a></li>
+                            <li><a href="#" class="dropdown-item">Ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Imac</a></li>
+                        </ul>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#" class="dropdown-item">Smart Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Ios</a></li>
+                            <li><a href="#" class="dropdown-item">Ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Imac</a></li>
+                        </ul>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Samsung</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#" class="dropdown-item">User Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Ios</a></li>
+                            <li><a href="#" class="dropdown-item">Ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Imac</a></li>
+                        </ul>
+                       </div>
+                    </div>
+                    <!-- Left End -->
+                    <!-- Right Start -->
+                    <div class="col-md-12 p-3 pb-5">
+                    <h2>Vertically Grouped Button Dropdown</h2>
+                    <hr>
+                    <div class="btn-group-vertical bg-primary rounded-3 dropend">
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Apple</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#" class="dropdown-item">Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Ios</a></li>
+                            <li><a href="#" class="dropdown-item">Ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Imac</a></li>
+                        </ul>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Sony</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#" class="dropdown-item">Smart Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Ios</a></li>
+                            <li><a href="#" class="dropdown-item">Ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Imac</a></li>
+                        </ul>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">Samsung</button>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#" class="dropdown-item">User Watch</a></li>
+                            <li><a href="#" class="dropdown-item">Ios</a></li>
+                            <li><a href="#" class="dropdown-item">Ipad</a></li>
+                            <li><a href="#" class="dropdown-item">Imac</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    <!-- Right End -->
+                </div>
+            </div>
+            <!-- nineth Section End Here -->
+        </div>
+        <!-- Card Section End Here -->
+
+
+    </div>
+    <!-- Main Container End Here -->
+</body>
+
+</html>

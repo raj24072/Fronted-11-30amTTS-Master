@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Carousel With Caption</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+     <!-- External CSS -->
+     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+     <!-- Font Awesome Online Icon CDN -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <!-- Bootstrap Online Icon CDN -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+     <!-- Bootstrap Online Stylesheet CDN -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!-- Jquery Online Script CDN -->
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+     <!-- Bootstrap Online Script CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+         crossorigin="anonymous"></script>
+     <!-- External Script -->
+     <script src='main.js'></script>
+</head>
+<body>
+    <!-- Carousel Start Here -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Indicaters S -->
+        <div class="carousel-indicators">
+            <button type="button" class="active" data-bs-target="#demo" data-bs-slide-to="0"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        <!-- Carousel Indicaters E -->
+
+        <!-- Carousel Slide Show S -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.w3schools.com/bootstrap5/la.jpg" class="d-block" alt="12" style="width: 100%; height: 500px;">
+                <div class="carousel-caption">
+                    <h2>Los Angeles</h2>
+                    <p>We had such a great time in LA!</p>
+                </div>
+            </div>
+
+            <div class="carousel-item active">
+                <img src="https://www.w3schools.com/bootstrap5/chicago.jpg" class="d-block" alt="12" style="width: 100%; height: 500px;">
+                <div class="carousel-caption">
+                    <h2>Chicago</h2>
+                    <p>Thank you, Chicago!</p>
+                </div>
+            </div>
+
+            <div class="carousel-item active">
+                <img src="https://www.w3schools.com/bootstrap5/ny.jpg" class="d-block" alt="12" style="width: 100%; height: 500px;">
+                <div class="carousel-caption">
+                    <h2>New Your!</h2>
+                    <p>We love the Big Apple!</p>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Slide Show E -->
+
+        <!-- Carousel Left And Right S -->
+        <button type="button" class="carousel-control-prev" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button type="button" class="carousel-control-next" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <!-- Carousel Left And Right E -->
+    </div>
+    <!-- Carousel End Here -->
+</body>
+</html>

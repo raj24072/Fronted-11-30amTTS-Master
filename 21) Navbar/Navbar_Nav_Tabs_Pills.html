@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Navbar Navs</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- External CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Font Awesome Online Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Online Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap Online Stylesheet CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Jquery Online Script CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap Online Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- External Script -->
+    <script src='main.js'></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+
+        .dro:hover .unders {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main Nav Start Here -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a href="https://flipkart.com" class="navbar-brand ms-3">RJ</a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#demo">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="demo" class="collapse navbar-collapse ms-5 font-monospace fs-5">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Apple</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Samsung</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Sony</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown">Lenovo</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a href="#" class="dropdown-item">Camera</a></li>
+                            <li><a href="#" class="dropdown-item">Tablet</a></li>
+                            <li><a href="#" class="dropdown-item">Bravia 4K</a></li>
+                            <li><a href="#" class="dropdown-item">Ultra HD</a></li>
+                            <li class="dropdown dropend dro"><a href="#" class="dropdown-item dropdown-toggle"
+                                    data-bs-toggle="dropdown">Smart Phones</a>
+
+                                <ul class="dropdown-menu dropdown-menu-end unders dropdown-menu-dark"
+                                    style="margin-left: 100%; margin-top: -20%;">
+                                    <li><a href="#" class="dropdown-item">Sony T2 Ultra</a></li>
+                                    <li><a href="#" class="dropdown-item">Sony M2</a></li>
+                                    <li><a href="#" class="dropdown-item">Sony Xperia</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link">LG</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input type="text" class="form-control me-2" placeholder="Search" />
+                    <button type="button" class="btn btn-primary">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Nav End Here -->
+
+    <div class="container-fluid mt-1">
+        <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item"><a href="#Author" class="nav-link active" data-bs-toggle="tab">Apple</a></li>
+            <li class="nav-item"><a href="#Author2" class="nav-link" data-bs-toggle="tab">Samsung</a>
+            </li>
+            <li class="nav-item"><a href="#Author3" class="nav-link" data-bs-toggle="tab">Sony</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+        <div class="container tab-pane active" id="Author"><br>
+            <h2>Apple Brand</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit enim quasi nulla atque eveniet
+                saepe? Placeat eum eligendi eveniet voluptatibus? Voluptates aut magnam culpa animi rem laboriosam
+                accusantium maxime excepturi!</p>
+        </div>
+
+        <div class="container tab-pane" id="Author2"><br>
+            <h2>Samsung Brand</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fuga assumenda dolore sapiente
+                veritatis velit nisi eos animi non unde quia deserunt amet, obcaecati explicabo ea rerum, consequuntur
+                culpa ipsa.</p>
+        </div>
+        <div class="container tab-pane" id="Author3"><br>
+            <h2>Sony Brand</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fuga assumenda dolore sapiente
+                veritatis velit nisi eos animi non unde quia deserunt amet, obcaecati explicabo ea rerum, consequuntur
+                culpa ipsa.</p>
+        </div>
+    </div>
+    </div> 
+
+    <!-- Nav Pills Start Here -->
+    <div class="container-fluid mt-3">
+        <ul class="nav nav-pills" role="tablist">
+            <li class="nav-item"><a href="#home" class="nav-link active" data-bs-toggle="pill">Apple</a></li>
+            <li class="nav-item"><a href="#home1" class="nav-link" data-bs-toggle="pill">Micromax</a></li>
+            <li class="nav-item"><a href="#home2" class="nav-link" data-bs-toggle="pill">Samsung</a></li>
+            <li class="nav-item"><a href="#home3" class="nav-link" data-bs-toggle="pill">Sony</a></li>
+            <li class="nav-item"><a href="#home4" class="nav-link" data-bs-toggle="pill">Lenovo</a></li>
+            <li class="nav-item"><a href="#home5" class="nav-link" data-bs-toggle="pill">Lava</a></li>
+            <li class="nav-item"><a href="#home6" class="nav-link" data-bs-toggle="pill">Realme</a></li>
+        </ul>
+
+        <!-- tab panes start here -->
+        <div class="tab-content">
+            <div class="container tab-pane active" id="home"><br>
+                <h2>Apple Iphone</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia atque doloribus, esse eaque quasi. Labore voluptatem similique eos delectus laborum voluptas officia blanditiis modi soluta qui! Nam, nulla doloremque!</p>
+            </div>
+
+            <div class="container tab-pane" id="home1"><br>
+                <h2>Micromax Phone</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia atque doloribus, esse eaque quasi. Labore voluptatem similique eos delectus laborum voluptas officia blanditiis modi soluta qui! Nam, nulla doloremque!</p>
+            </div>
+
+            <div class="container tab-pane" id="home2"><br>
+                <h2>Samsung Phone</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia atque doloribus, esse eaque quasi. Labore voluptatem similique eos delectus laborum voluptas officia blanditiis modi soluta qui! Nam, nulla doloremque!</p>
+            </div>
+
+            <div class="container tab-pane" id="home3"><br>
+                <h2>Sony phone</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia atque doloribus, esse eaque quasi. Labore voluptatem similique eos delectus laborum voluptas officia blanditiis modi soluta qui! Nam, nulla doloremque!</p>
+            </div>
+
+            <div class="container tab-pane" id="home4"><br>
+                <h2>Lenovo Phone</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia atque doloribus, esse eaque quasi. Labore voluptatem similique eos delectus laborum voluptas officia blanditiis modi soluta qui! Nam, nulla doloremque!</p>
+            </div>
+
+            <div class="container tab-pane" id="home5"><br>
+                <h2>Lava Phone</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia atque doloribus, esse eaque quasi. Labore voluptatem similique eos delectus laborum voluptas officia blanditiis modi soluta qui! Nam, nulla doloremque!</p>
+            </div>
+
+            <div class="container tab-pane" id="home6"><br>
+                <h2>Lava Phone</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia atque doloribus, esse eaque quasi. Labore voluptatem similique eos delectus laborum voluptas officia blanditiis modi soluta qui! Nam, nulla doloremque!</p>
+            </div>
+
+
+        </div>
+        <!-- tab panes end here -->
+    </div>
+    <!-- Nav Pills End Here -->
+</body>
+
+</html>

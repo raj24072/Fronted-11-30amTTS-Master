@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Bootstrap Tables</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- External CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Online icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap Online Stylesheet CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Bootstrap Online Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- Jquery online CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- External Script -->
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <div class="container mt-3">
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">Basic Table</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table class add basic styling (light padding and horizontal dividers) to a table:</p>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">Basic Table row striped</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table-striped class addz zebra-stripes to a table:</p>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">Basic Table column and row striped</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table-striped class addz zebra-stripes to a table:</p>
+            <table class="table table-striped-columns table-striped">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Work</th>
+                        <th>Remark</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>B</td>
+                        <td>A</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>B</td>
+                        <td>A</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>B</td>
+                        <td>A</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">Bordered Table</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table class add basic styling (light padding and horizontal dividers) to a table:</p>
+            <p>The .table-bordered class adds borders on all side of the table and cells</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">Bordered Table With Table Row hovers</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table class add basic styling (light padding and horizontal dividers) to a table:</p>
+            <p>The .table-bordered class adds borders on all side of the table and cells</p>
+            <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">Black/Dark Table</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table class add basic styling (light padding and horizontal dividers) to a table:</p>
+            <p>The .table-bordered class adds borders on all side of the table and cells</p>
+            <table class="table table-bordered table-dark">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">Dark_striped-Table</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table class add basic styling (light padding and horizontal dividers) to a table:</p>
+            <p>The .table-bordered class adds borders on all side of the table and cells</p>
+            <table class="table table-bordered table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">Hoverable Dark Table</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table class add basic styling (light padding and horizontal dividers) to a table:</p>
+            <p>The .table-bordered class adds borders on all side of the table and cells</p>
+            <table class="table table-bordered table-dark table-hover ">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">danger-Table</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table class add basic styling (light padding and horizontal dividers) to a table:</p>
+            <p>The .table-bordered class adds borders on all side of the table and cells</p>
+            <table class="table table-bordered table-borderless table-striped table-danger table-hover">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">Bordereless-table</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table class add basic styling (light padding and horizontal dividers) to a table:</p>
+            <p>The .table-bordered class adds borders on all side of the table and cells</p>
+            <div class="table-responsive-lg">
+            <table class="table table-borderless">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">Contaxtual Classes</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table class add basic styling (light padding and horizontal dividers) to a table:</p>
+            <p>The .table-bordered class adds borders on all side of the table and cells</p>
+            <div class="table-responsive-md">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr class="table-success">
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                    <tr class="table-info">
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr class="table-dark">
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                    <tr class="table-active">
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr class="table-light">
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                  
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">Table-Head-Color</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table class add basic styling (light padding and horizontal dividers) to a table:</p>
+            <div class="table-responsive-sm">
+            <table class="table table-bordered rounded-3 text-center table-hover table table-responsive">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+        <div class="p-5 m-3 border border-1 rounded-2 mb-3">
+            <h2 class="text-center font-monospace">Small Table</h2>
+            <hr class="w-25 mx-auto">
+            <p>The .table class add basic styling (light padding and horizontal dividers) to a table:</p>
+            <div class="table-responsive">
+            <table class="table table-bordered rounded-3 text-center table-hover table-sm">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-primary">
+                        <td>Darshan</td>
+                        <td>Shingala</td>
+                        <td>Shingala@example.com</td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>Raj</td>
+                        <td>Parmar</td>
+                        <td>Parmar@example.com</td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>Karan</td>
+                        <td>Sondarva</td>
+                        <td>Sondarva@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

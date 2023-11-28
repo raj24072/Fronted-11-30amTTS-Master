@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Flexbox</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- External Stylesheet here -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Font Awesome Online CDN Here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Font Online CDN Here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap Online Stylesheet Here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Jquery Online CDN Here -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap Online Script CDN Here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- External js Script Here -->
+    <script src='main.js'></script>
+</head>
+
+<body style="background-color: black;">
+    <!-- Main Contaienr Start Here -->
+    <div class="container mt-3">
+        <!-- Card Section Start Here -->
+        <div class="bg-white border border-2 rounded">
+            <!-- Card header Strat here-->
+            <div>
+                <h2 class="text-center">Flexbox</h2>
+                <hr>
+            </div>
+            <!-- Card header End here-->
+            <!-- (1)Display Flex Start Here -->
+            <!-- Display Flex Start  -->
+            <h2 class="text-center mt-2">(1) Display Flex & Responsive</h2>
+            <h4 class="ps-3">(a) Display Flex</h4>
+            <div class="d-flex bg-secondary mt-3 mb-3">
+                <div class="p-5 bg-info">Flex item 1</div>
+                <div class="p-5 bg-success">Flex item 2</div>
+                <div class="p-5 bg-primary">Flex item 3</div>
+            </div>
+            <!-- Display Flex End -->
+            <!-- Display Flex Responsive Start -->
+            <h4 class="ps-3 mt-1">(b) Display Flex Responsive</h4>
+            <div class="mt-3 mb-3">
+                <span class="d-flex p-2 bg-info">d-flex</span>
+                <span class="d-sm-flex p-2 bg-info">sm</span>
+                <span class="d-md-flex p-2 bg-info">md</span>
+                <span class="d-lg-flex p-2 bg-info">lg</span>
+                <span class="d-xl-flex p-2 bg-info">xl</span>
+                <span class="d-xxl-flex p-2 bg-info">xxl</span>
+
+            </div>
+            <!-- Display Flex Responsive End -->
+            <!-- (1)Display Flex End Here -->
+
+            <!-- (2)Display-Inline-Flex Start Here -->
+            <!-- Display Inline Flex Start  -->
+            <h2 class="text-center mt-2">(2) Display Inline Flex & Responsive</h2>
+            <h4 class="ps-3">(a) Display Inline Flex</h4>
+            <div class="d-inline-flex bg-secondary mt-3 mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-success">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <!-- Display Inline Flex End -->
+            <!-- Display Inline Flex Responsive Start -->
+            <h4 class="ps-3 mt-1">(b) Display Inline Flex Responsive</h4>
+            <div class="mt-3 mb-3">
+                <div class="d-inline-flex p-2 bg-info">d-flex</div>
+                <div class="d-sm-inline-flex p-2 bg-info">sm</div>
+                <div class="d-md-inline-flex p-2 bg-info">md</div>
+                <div class="d-lg-inline-flex p-2 bg-info">lg</div>
+                <div class="d-xl-inline-flex p-2 bg-info">xl</div>
+                <div class="d-xxl-inline-flex p-2 bg-info">xxl</div>
+
+            </div>
+            <!-- Display Inline Flex Responsive End -->
+            <!-- (2)Display Inline Flex End Here -->
+
+            <!-- (3)Display-Flex-row Start Here -->
+            <!-- Display Flex row Start  -->
+            <h2 class="text-center mt-2">(3) Display Flex Row & Responsive</h2>
+            <h4 class="ps-3">(a) Display Flex row</h4>
+            <div class="d-flex flex-row bg-secondary mt-3 mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-success">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <!-- Display Flex row End -->
+            <!-- Display Flex row Responsive Start -->
+            <h4 class="ps-3 mt-1">(b) Display Flex row Responsive</h4>
+            <div class="mt-3 mb-3">
+                <div class="d-flex flex-row  bg-secondary mt-3">
+                    <div class="p-2 bg-info">Flex item row</div>
+                    <div class="p-2 bg-success">Flex item row</div>
+                    <div class="p-2 bg-primary">Flex item row</div>
+                </div>
+                <div class="d-sm-flex flex-sm-row  bg-secondary mt-3">
+                    <div class="p-2 bg-info">Flex item sm</div>
+                    <div class="p-2 bg-success">Flex item sm</div>
+                    <div class="p-2 bg-primary">Flex item sm</div>
+                </div>
+                <div class="d-md-flex flex-md-row  bg-secondary mt-3">
+                    <div class="p-2 bg-info">Flex item md</div>
+                    <div class="p-2 bg-success">Flex item md</div>
+                    <div class="p-2 bg-primary">Flex item md</div>
+                </div>
+                <div class="d-lg-flex flex-lg-row  bg-secondary mt-3">
+                    <div class="p-2 bg-info">Flex item lg</div>
+                    <div class="p-2 bg-success">Flex item lg</div>
+                    <div class="p-2 bg-primary">Flex item lg</div>
+                </div>
+                <div class="d-xl-flex flex-xl-row  bg-secondary mt-3">
+                    <div class="p-2 bg-info">Flex item xl</div>
+                    <div class="p-2 bg-success">Flex item xl</div>
+                    <div class="p-2 bg-primary">Flex item xl</div>
+                </div>
+                <div class="d-xxl-flex flex-xxl-row  bg-secondary mt-3">
+                    <div class="p-2 bg-info">Flex item xxl</div>
+                    <div class="p-2 bg-success">Flex item xxl</div>
+                    <div class="p-2 bg-primary">Flex item xxl</div>
+                </div>
+
+            </div>
+            <!-- Display Flex row Responsive End -->
+            <!-- (3)Display Flex row End Here -->
+
+            <!-- (4)Display-Flex-row Start Here -->
+            <!-- Display Flex row Start  -->
+            <h2 class="text-center mt-2">(4) Display Flex Row Reverse & Responsive</h2>
+            <h4 class="ps-3">(a) Display Flex row Reverse</h4>
+            <div class="d-flex flex-row-reverse bg-secondary mt-3 mb-3">
+                <div class="p-2 bg-info">Flex item 1</div>
+                <div class="p-2 bg-success">Flex item 2</div>
+                <div class="p-2 bg-primary">Flex item 3</div>
+            </div>
+            <!-- Display Flex row-reverse End -->
+            <!-- Display Flex row-reverse Responsive Start -->
+            <h4 class="ps-3 mt-1">(b) Display Flex row-reverse Responsive</h4>
+            <div class="mt-3 mb-3">
+                <div class="d-flex flex-row-reverse  bg-secondary mt-3">
+                    <div class="p-2 bg-info">Flex item row</div>
+                    <div class="p-2 bg-success">Flex item row</div>
+                    <div class="p-2 bg-primary">Flex item row</div>
+                </div>
+                <div class="d-sm-flex flex-sm-row-reverse  bg-secondary mt-3">
+                    <div class="p-2 bg-info">Flex item sm</div>
+                    <div class="p-2 bg-success">Flex item sm</div>
+                    <div class="p-2 bg-primary">Flex item sm</div>
+                </div>
+                <div class="d-md-flex flex-md-row-reverse  bg-secondary mt-3">
+                    <div class="p-2 bg-info">Flex item md</div>
+                    <div class="p-2 bg-success">Flex item md</div>
+                    <div class="p-2 bg-primary">Flex item md</div>
+                </div>
+                <div class="d-lg-flex flex-lg-row-reverse  bg-secondary mt-3">
+                    <div class="p-2 bg-info">Flex item lg</div>
+                    <div class="p-2 bg-success">Flex item lg</div>
+                    <div class="p-2 bg-primary">Flex item lg</div>
+                </div>
+                <div class="d-xl-flex flex-xl-row-reverse  bg-secondary mt-3">
+                    <div class="p-2 bg-info">Flex item xl</div>
+                    <div class="p-2 bg-success">Flex item xl</div>
+                    <div class="p-2 bg-primary">Flex item xl</div>
+                </div>
+                <div class="d-xxl-flex flex-xxl-row-reverse  bg-secondary mt-3">
+                    <div class="p-2 bg-info">Flex item xxl</div>
+                    <div class="p-2 bg-success">Flex item xxl</div>
+                    <div class="p-2 bg-primary">Flex item xxl</div>
+                </div>
+
+            </div>
+            <!-- Display Flex row-reverse Responsive End -->
+            <!-- (4)Display Flex row-reverse End Here -->
+
+            <!-- (5)Display-Flex justify-content Start Here -->
+            <h2 class="text-center mt-2">(5) Display Flex justify-content & Responsive</h2>
+            <p><code>.justify-content-start</code></p>
+            <div class="d-flex justify-content-start bg-secondary">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-center</code></p>
+            <div class="d-flex justify-content-center bg-secondary">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-end</code></p>
+            <div class="d-flex justify-content-end bg-secondary">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-between</code></p>
+            <div class="d-flex justify-content-between bg-secondary">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-evenly</code></p>
+            <div class="d-flex justify-content-evenly bg-secondary">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-around</code></p>
+            <div class="d-flex justify-content-evenly bg-secondary">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <!-- Display Flex justify-content Responsive Start -->
+            <h4 class="ps-3 mt-3">(b) Display Flex justify-content Responsive</h4>
+
+            <p><code>.justify-content-sm-start</code></p>
+            <div class="d-flex justify-content-sm-start bg-secondary">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-md-center</code></p>
+            <div class="d-flex justify-content-md-center bg-secondary">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-lg-end</code></p>
+            <div class="d-flex justify-content-lg-end bg-secondary">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-xl-between</code></p>
+            <div class="d-flex justify-content-xl-between bg-secondary">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-xxl-evenly</code></p>
+            <div class="d-flex justify-content-xxl-evenly bg-secondary">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-sm-around</code></p>
+            <div class="d-flex justify-content-sm-around bg-secondary">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+
+            <!-- Display Flex flex-column justify-content Responsive End -->
+            <!-- (5)Display Flex  flex-column justify-content End Here -->
+
+
+            <!-- (6)Display-Flex flex-column justify-content Start Here -->
+           
+            <h2 class="text-center mt-2">(6) Display Flex flex-column justify-content & Responsive</h2>
+            <p><code>flex-column</code></p>
+            <div class="d-flex flex-column bg-secondary" style="height: 300px;">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-center</code></p>
+            <div class="d-flex flex-column justify-content-center bg-secondary" style="height: 300px;">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-end</code></p>
+            <div class="d-flex flex-column justify-content-end bg-secondary" style="height: 300px;">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-between</code></p>
+            <div class="d-flex flex-column justify-content-between bg-secondary" style="height: 300px;">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-evenly</code></p>
+            <div class="d-flex flex-column justify-content-evenly bg-secondary" style="height: 300px;">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-around</code></p>
+            <div class="d-flex flex-column justify-content-around bg-secondary" style="height: 300px;">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <!-- Display Flex justify-content Responsive Start -->
+            
+            <h4 class="ps-3 mt-3">(b) Display Flex flex-column justify-content Responsive</h4>
+            <p><code>flex-column</code></p>
+            <div class="d-flex  flex-column bg-secondary" style="height: 300px;">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-center sm</code></p>
+            <div class="d-flex flex-sm-column justify-content-center bg-secondary" style="height: 300px;">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-end md</code></p>
+            <div class="d-flex flex-md-column justify-content-end bg-secondary" style="height: 300px;">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-between lg</code></p>
+            <div class="d-flex flex-lg-column justify-content-between bg-secondary" style="height: 300px;">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-evenly xl</code></p>
+            <div class="d-flex flex-xl-column justify-content-evenly bg-secondary" style="height: 300px;">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+            <p class="mt-2"><code>.justify-content-around xxl</code></p>
+            <div class="d-flex flex-xxl-column justify-content-around bg-secondary" style="height: 300px;">
+                <div class="p-2 bg-primary">Flex items 1</div>
+                <div class="p-2 bg-success">Flex items 2</div>
+                <div class="p-2 bg-info">Flex items 3</div>
+            </div>
+
+            <!-- Display Flex justify-content Responsive End -->
+            <!-- (6)Display Flex justify-content End Here -->
+            
+            <!-- Flex Wrap Start (7) -->
+            <h2 class="text-center mt-2">(6) Flex Wrap  & Responsive</h2>
+            <p class="ms-3"><code>Flex Wrap</code></p>
+              <div class="d-flex flex-wrap">
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+              </div>
+              <p class="mt-5"><code>.flex-nowrap</code></p>
+              <div class="d-flex flex-wrap">
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                <div class="p-2 bg-primary me-2 mt-2">Flex-items</div>
+                </div>
+                <p class="mt-5"><code>.flex-wrap-reverse</code></p>
+              <div class="d-flex flex-wrap-reverse">
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 1</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 2</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 3</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 4</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 5</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 6</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 7</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 8</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 9</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 10</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 11</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 12</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 13</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 14</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 15</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 16</div> 
+              </div>
+
+              <h2 class="mt-4">Responsive Flex-Wrap</h2>
+              <p class=""><code>.flex-wrap</code></p>
+              <div class="d-flex  flex-md-wrap">
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 1</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 2</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 3</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 4</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 5</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 6</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 7</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 8</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 9</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 10</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 11</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 12</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 13</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 14</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 15</div>
+               <div class="p-2 bg-primary me-2 mt-2">Flex-items 16</div> 
+              </div>
+            <!-- Flex Wrap End (7) -->
+
+            <!-- Align Content Start (8) -->
+            <h2 class="mt-4">Responsive Flex-Wrap Align-content-center</h2>
+            <p class=""><code>.flex-wrap</code></p>
+            <div class="d-flex align-content-lg-center p-3 bg-light flex-wrap" style="height: 300px;">
+                <div class="p-2 bg-secondary">Flex item 1</div>
+                <div class="p-2 bg-secondary">Flex item 2</div>
+                <div class="p-2 bg-secondary">Flex item 3</div>
+                <div class="p-2 bg-secondary">Flex item 4</div>
+                <div class="p-2 bg-secondary">Flex item 5</div>
+                <div class="p-2 bg-secondary">Flex item 6</div>
+                <div class="p-2 bg-secondary">Flex item 7</div>
+                <div class="p-2 bg-secondary">Flex item 8</div>
+                <div class="p-2 bg-secondary">Flex item 9</div>
+                <div class="p-2 bg-secondary">Flex item 10</div>
+                <div class="p-2 bg-secondary">Flex item 11</div>
+                <div class="p-2 bg-secondary">Flex item 12</div>
+                <div class="p-2 bg-secondary">Flex item 13</div>
+                <div class="p-2 bg-secondary">Flex item 14</div>
+                <div class="p-2 bg-secondary">Flex item 15</div>
+                <div class="p-2 bg-secondary">Flex item 16</div>
+                <div class="p-2 bg-secondary">Flex item 17</div>
+                <div class="p-2 bg-secondary">Flex item 18</div>
+                <div class="p-2 bg-secondary">Flex item 19</div>
+                <div class="p-2 bg-secondary">Flex item 20</div>
+                <div class="p-2 bg-secondary">Flex item 21</div>
+                <div class="p-2 bg-secondary">Flex item 22</div>
+                <div class="p-2 bg-secondary">Flex item 23</div>
+                <div class="p-2 bg-secondary">Flex item 24</div>
+                <div class="p-2 bg-secondary">Flex item 25</div>
+            </div>
+            <!-- Align Content End (8) -->
+
+        </div>
+        <!-- Section End Here -->
+    </div>
+    <!-- Main Contaienr End Here -->
+</body>
+
+</html>

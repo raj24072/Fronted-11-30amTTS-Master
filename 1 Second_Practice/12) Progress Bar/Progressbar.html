@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Progressbar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- External CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Font Awesome Online Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Online Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap Online Stylesheet CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Jquery Online Script CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap Online Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- External Script -->
+    <script src='main.js'></script>
+</head>
+
+<body style="background-color: darkcyan;">
+    <!-- Main Container Start here -->
+     <div class="container mt-3">
+        <!-- Card Section Start Here -->
+        <div class="card">
+            <!-- First Section Start Here -->
+            <div class="m-3 p-3 mb-3">
+                <h2 class="font-monospace">Basic Progressbar</h2>
+                <hr>
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 40%;">HTML</div>
+                </div>
+                <p>Progressbar Label</p>
+                <div class="progress mb-3">
+                    <div class="progress-bar text-dark" style="width: 80%;">CSS</div>
+                </div>
+                <p>Progressbar Height</p>
+                <div class="progress" style="height: 25px;">
+                <div class="progress-bar" style="width: 87%;"></div>
+                </div>
+            </div>
+            <!-- First Section End Here -->
+            <!-- Second Section Start Here -->
+            <div class="m-3 p-3 mb-3">
+                <h2 class="font-monospace">Colored Progressbar</h2>
+                <hr>
+                <!-- Blue -->
+                <div class="progress mb-3">
+                    <div class="progress-bar" style="width: 10%;"></div>
+                </div>
+                <!-- Warning -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" style="width: 20%;"></div>
+                </div>
+                <!-- Turquoise -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-info" style="width: 30%;"></div>
+                </div>
+                <!-- Red -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-danger" style="width: 40%;"></div>
+                </div>
+                <!-- Dark -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-dark" style="width: 50%;"></div>
+                </div>
+                <!-- Light -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-light" style="width: 60%;"></div>
+                </div>
+                <!-- Green -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success" style="width: 70%;"></div>
+                </div>
+                <!-- Secondary -->
+                <div class="progress">
+                    <div class="progress-bar bg-secondary" style="width: 80%;"></div>
+                </div>
+            </div>
+            <!-- Second Section End Here -->
+            <!-- Third Section Start Here -->
+            <div class="m-3 p-3 mb-3">
+                <h2 class="font-monospace">Striped Progressbar</h2>
+                <hr>
+                 <!-- Blue -->
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped" style="width: 10%;"></div>
+                </div>
+                <!-- Warning -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning progress-bar-striped" style="width: 20%;"></div>
+                </div>
+                <!-- Turquoise -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-info progress-bar-striped" style="width: 30%;"></div>
+                </div>
+                <!-- Red -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-danger progress-bar-striped" style="width: 40%;"></div>
+                </div>
+                <!-- Dark -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-dark progress-bar-striped" style="width: 50%;"></div>
+                </div>
+                <!-- Light -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-light progress-bar-striped" style="width: 60%;"></div>
+                </div>
+                <!-- Green -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success progress-bar-striped" style="width: 70%;"></div>
+                </div>
+                <!-- Secondary -->
+                <div class="progress">
+                    <div class="progress-bar bg-secondary progress-bar-striped" style="width: 80%;"></div>
+                </div>
+            </div>
+            <!-- Third Section End Here -->
+            <!-- Fourth Section Start Here -->
+            <div class="m-3 p-3 mb-3">
+                <h2 class="font-monospace">Animated Striped Progressbar</h2>
+                <hr>
+                   <!-- Blue -->
+                <div class="progress mb-3">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 10%;"></div>
+                </div>
+                <!-- Warning -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" style="width: 20%;"></div>
+                </div>
+                <!-- Turquoise -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-info progress-bar-striped progress-bar-animated" style="width: 30%;"></div>
+                </div>
+                <!-- Red -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 40%;"></div>
+                </div>
+                <!-- Dark -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-dark progress-bar-striped progress-bar-animated" style="width: 50%;"></div>
+                </div>
+                <!-- Black -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-black progress-bar-striped progress-bar-animated" style="width: 60%;"></div>
+                </div>
+                <!-- Green -->
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width: 70%;"></div>
+                </div>
+                <!-- Secondary -->
+                <div class="progress">
+                    <div class="progress-bar bg-secondary progress-bar-striped progress-bar-animated" style="width: 80%;"></div>
+                </div>
+            </div>
+            <!-- Fourth Section End Here -->
+            <!-- Fifth Section Start Here -->
+            <div class="m-3 p-3 mb-3">
+                <h2 class="font-monospace">Multiple progressbar</h2>
+                <hr>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 10%;">0%</div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-secondary" style="width: 20%;">20%</div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" style="width: 30%;">30%</div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 40%;">40%</div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width: 50%;">50%</div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 60%;">60%</div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" style="width: 70%;">70%</div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-black" style="width: 80%;">80%</div>
+                </div>
+            </div>
+            <!-- Fifth Section End Here -->
+        </div>
+        <!-- Card Section End Here -->
+     </div>
+    <!-- Main Container End  here -->
+</body>
+
+</html>

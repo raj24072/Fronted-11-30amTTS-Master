@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Show Toast In Js</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- External CSS Here -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Font-Awesome Online icon CDN Here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Online icon CDN Here -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap Online Stylesheet CDN Here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Jquery Online CDN Here -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap Online Script CDN Here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- External JS Here -->
+    <script src='main.js'></script>  
+</head>
+<body>
+    <!-- Main Container Start Here -->
+    <div class="container mt-3">
+        <h2>Toast Example</h2>
+        <p>In this example, we used a button to show the toast message.</p>
+        <button type="button" class="btn btn-primary" id="toastbtn">Show Toast</button>
+
+        <!-- Toast Start Here -->
+        <div class="toast">
+            <div class="toast-header">
+                <strong class="me-auto">Toast Header</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body">
+                <p>Some text inside the toast body</p>
+            </div>
+        </div>
+    </div>
+    <!-- Main Container End Here -->
+
+    <!-- Script Here -->
+    <script>
+        document.getElementById("toastbtn").onclick = function() {
+            var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+            var toastList = toastElList.map(function(toastEl) {
+                return new bootstrap.Toast(toastEl)
+            }) 
+            toastList.forEach(toast => toast.show())
+        }
+    </script>
+</body>
+</html>

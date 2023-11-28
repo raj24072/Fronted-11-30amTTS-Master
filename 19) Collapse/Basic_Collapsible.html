@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Basic Collapsible</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- External CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Font Awesome Online Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Online Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap Online Stylesheet CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Jquery Online Script CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap Online Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- External Script -->
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!-- Main Container Start Here -->
+    <div class="container mt-3">
+        <div class="m-3 p-3 mb-3">
+            <h2>Simple Collapsible</h2>
+            <p>Click on the button toggle between showing and hiding content.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo">Simple
+                Collapsible</button>
+            <div id="demo" class="collapse border border-1 p-3 rounded mt-2 text-info" style="transition: 0.5s ease all;">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, quisquam consectetur impedit labore
+                voluptates veritatis? Inventore cupiditate voluptatibus, impedit a itaque, corrupti dolore labore at
+                minus pariatur ullam porro optio? Tempore qui dolorem, mollitia quidem minima rerum explicabo? Sed
+                debitis eius odio explicabo fugit ipsa, laudantium id nemo sapiente maxime!
+            </div>
+            <br><br>
+            <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo1">Collapse</button>
+            <div id="demo1" class="collapse border border-1 rounded-2 p-3 text-success mt-3" style="transition: 0.5s ease all; ">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, nesciunt! Repellendus, in commodi cupiditate quam, eos non, fugiat voluptatum temporibus at sapiente accusantium. Praesentium velit id laboriosam officia illum maiores ullam, provident amet distinctio ducimus sunt accusamus! Reiciendis est architecto ullam eaque iure natus, commodi magnam repellendus distinctio accusantium nulla!
+            </div>
+        </div>
+    </div>
+    <!-- Main Container End Here -->
+</body>
+
+</html>

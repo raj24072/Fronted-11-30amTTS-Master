@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Toggleable Dynamic Pills</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- External CSS -->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <!-- Font Awesome Online Icon CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap Online Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Bootstrap Online Stylesheet CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Jquery Online Script CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap Online Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <!-- External Script -->
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <!-- Main Container Start Here -->
+    <div class="container mt-3">
+        <!-- Nav Pills -->
+        <h2>Toggleable Pills</h2>
+        <ul class="nav nav-pills mt-2" role="tablist">
+            <li class="nav-item"><a href="#home" class="nav-link active" data-bs-toggle="pill">Home</a></li>
+            <li class="nav-item"><a href="#menu1" class="nav-link" data-bs-toggle="pill">Menu 1 </a></li>
+            <li class="nav-item"><a href="#menu2" class="nav-link" data-bs-toggle="pill">Menu 2</a></li>
+        </ul>
+
+        <!-- tab-panes -->
+        <div class="tab-content">
+            <div id="home" class="container tab-pane active"><br>
+                <h2>Home</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, dolore beatae inventore quam
+                    perspiciatis obcaecati eligendi mollitia distinctio rem rerum reiciendis odio earum incidunt aut,
+                    architecto culpa, quia assumenda! Praesentium!</p>
+            </div>
+            <div class="container tab-pane fade" id="menu1"><br>
+                <h2>Menu 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, fugiat quasi. Modi expedita beatae
+                    quibusdam nobis doloremque. Et, ipsa error labore nesciunt ut, consequuntur ab beatae molestias
+                    harum cum repudiandae.</p>
+            </div>
+            <div class="container tab-pane fade" id="menu2"><br>
+                <h2>Menu2</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime quo non, enim modi quam quisquam
+                    libero illo ut ex sit accusantium deserunt harum repellendus consequuntur assumenda sunt deleniti.
+                    Sed, voluptate?</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- Main Container End Here -->
+
+</body>
+
+</html>
